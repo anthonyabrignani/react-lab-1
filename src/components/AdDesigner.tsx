@@ -5,7 +5,7 @@ function AdDesigner() {
   const [cream, setCream] = useState("Strawberry");
   const [light, setLight] = useState("Light");
   const [font, setFont] = useState(22);
-  const styles: any = {font: font + "px"};
+  const styles: any = {fontSize: font + "px"};
 
   let addClass = "";
   if (light === "Light") {
@@ -46,7 +46,8 @@ function AdDesigner() {
     <div className={"AdDesigner" + addClass}>
       <h2>Ad Designer</h2>
       <a></a>
-      <h4>Vote For {cream}</h4>
+      <h4>Vote For</h4> 
+      <h4 style={styles}>{cream}</h4>
       <h3>What to Support</h3>
       <button onClick={chocolate}>Chocolate</button>
       <button onClick={vanilla}>Vanilla</button>
