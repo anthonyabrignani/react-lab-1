@@ -5,7 +5,7 @@ function AdDesigner() {
   const [cream, setCream] = useState("Strawberry");
   const [light, setLight] = useState("Light");
   const [font, setFont] = useState(22);
-  const styles = {font-size: font + "px"}
+  const styles: any = {font: font + "px"};
 
   let addClass = "";
   if (light === "Light") {
