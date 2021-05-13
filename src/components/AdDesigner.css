@@ -1,0 +1,27 @@
+.AdDesigner {
+  position: relative;
+  flex-direction: column;
+  margin-left: 40px;
+  top: 185px;
+}
+
+button {
+  color: white;
+  background-color: #0e3c7e;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.Dark a {
+    background-color: #222;
+}
+
+.Dark h4 {
+    color: #fff;
+}
+
+a {
+  padding: 70px 150px;
+  border: solid 5px #222;
+}

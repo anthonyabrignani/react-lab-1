@@ -1,0 +1,15 @@
+.Header {
+  color: #0e3c7e;
+}
+
+h1 {
+  width: 100%;
+  margin-top: -20px;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  font-family: "Caveat", cursive;
+  border-bottom: solid 5px lightgray;
+  padding-bottom: 20px;
+  font-size: 3em;
+}
