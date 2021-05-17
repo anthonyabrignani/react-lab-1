@@ -1,0 +1,24 @@
+.Votes {
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 180px;
+  margin-left: 180px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  float: right;
+}
+
+.negative {
+  display: none;
+}
+
+.Votes h2 {
+  font-size: 2.5em;
+}
+
+@media only screen and (max-width: 768px) {
+    .Votes {
+        float: left;
+        margin-right: 180px;
+    }
+}

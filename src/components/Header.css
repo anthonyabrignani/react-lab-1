@@ -4,12 +4,20 @@
 
 h1 {
   width: 100%;
-  margin-top: -20px;
+  margin-top: 5px;
   display: flex;
-  position: fixed;
   justify-content: center;
   font-family: "Caveat", cursive;
   border-bottom: solid 5px lightgray;
   padding-bottom: 20px;
   font-size: 3em;
+}
+
+.Header p {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  color: black;
+  position: relative;
+  top: -90px;
 }

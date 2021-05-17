@@ -6,6 +6,7 @@ function AdDesigner() {
   const [light, setLight] = useState("Light");
   const [font, setFont] = useState(22);
   const styles: any = { fontSize: font + "px", fontFamily: "Caveat, cursive" };
+  const cursive: any = { fontFamily: "Caveat, cursive" };
 
   let addClass = "";
   if (light === "Light") {
@@ -44,21 +45,37 @@ function AdDesigner() {
 
   return (
     <div className={"AdDesigner" + addClass}>
-      <h2>Ad Designer</h2>
-      <a></a>
-      <h4>Vote For</h4>
-      <h4 style={styles}>{cream}</h4>
-      <h3>What to Support</h3>
-      <button onClick={chocolate}>Chocolate</button>
-      <button onClick={vanilla}>Vanilla</button>
-      <button onClick={strawberry}>Strawberry</button>
-      <h3>Color Theme</h3>
-      <button onClick={turnLight}>Light</button>
-      <button onClick={turnDark}>Dark</button>
-      <h3>Font Size</h3>
-      <button onClick={fontDown}>Down</button>
-      <p>{font}</p>
-      <button onClick={fontUp}>Up</button>
+      <div>
+        <h2 style={cursive}>Ad Designer</h2>
+      </div>
+      <div>
+        <p className="TheBox"><h4>Vote For</h4>
+        <h5 style={styles}>{cream}</h5>
+        </p>
+      </div>
+      <div>
+        <h3>What to Support</h3>
+      </div>
+      <div>
+        <button disabled={cream === "Chocolate"} onClick={chocolate}>Chocolate</button>
+        <button disabled={cream === "Vanilla"} onClick={vanilla}>Vanilla</button>
+        <button disabled={cream === "Strawberry"} onClick={strawberry}>Strawberry</button>
+      </div>
+      <div>
+        <h3>Color Theme</h3>
+      </div>
+      <div>
+        <button disabled={light === "Light"} onClick={turnLight}>Light</button>
+        <button disabled={light === "Dark"} onClick={turnDark}>Dark</button>
+      </div>
+      <div>
+        <h3>Font Size</h3>
+      </div>
+      <div>
+        <button onClick={fontDown}>Down</button> 
+        {font} 
+        <button onClick={fontUp}>Up</button>
+      </div>
     </div>
   );
 }
